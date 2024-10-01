@@ -23,7 +23,7 @@ verificarParidad()
 
 // Función que clasifica una edad fija
 function clasificarEdad() {
-    edad = 13; // 
+ let edad = 18; // 
 
     if (edad < 18) { 
         console.log("Menor de edad"); 
