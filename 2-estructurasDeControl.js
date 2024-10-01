@@ -5,7 +5,7 @@
 // Imprime "El número es par" o "El número es impar" según corresponda.
 
 function verificarParidad(numero) {
-      numero = 8
+     let numero = 8
 
     if (numero % 2 === 0) {
         console.log("El número es par");
