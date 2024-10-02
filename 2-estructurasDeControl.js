@@ -27,8 +27,10 @@ function clasificarEdad() {
 
     if (edad < 18) { 
         console.log("Menor de edad"); 
-    } else if (edad >= 18 && edad <= 65) {
+
+    } else if (edad <= 65) {
         console.log("Adulto");
+
     } else {
         console.log("Adulto mayor");
     }
@@ -40,15 +42,13 @@ clasificarEdad(); // Salida
 // Ejercicio 3: Bucles while
 // Instrucción: Crea una función que reciba un número entero positivo y utilice un bucle `while` para imprimir todos los números desde ese número hasta 0.
 function cuentaRegresiva(numero) {
-    let cuentaAtras = 12 // declaramos una variable 
  
-while (cuentaAtras > 0) {
-  console.log(cuentaAtras)
-  cuentaAtras = cuentaAtras - 1
+while (numero > 0) {
+  console.log(numero)
+  numero = numero - 1
+   }
 }
- 
-}
-cuentaRegresiva() // llamamos  a la función
+cuentaRegresiva(12);
 
 // Ejercicio 4: Bucles do-while
 // Instrucción: Escribe una función que imprima "Estoy aprendiendo JavaScript" 5 veces utilizando un bucle `do-while`.
@@ -76,10 +76,10 @@ function imprimirPares(numero) {
 // Instrucción: Escribe una función que recorra los números del 1 al 10, pero detén el bucle cuando el número sea igual a 6.
 function detenerEnSeis() {
     for (let i = 1; i <= 10; i++) {
-        if (i === 6) {
+        console.log(i);
+          if (i === 6) {
             break; // Detiene el bucle cuando i es igual a 6
         }
-        console.log(i);
     }
 }
 
@@ -148,21 +148,23 @@ function esVocal(letra) {
             console.log("No es una vocal");
     }
 }
-
-esVocal('J'); 
+esVocal("J"); 
 
 // Ejercicio 10: Condicionales complejos con operadores lógicos
 // Instrucción: Escribe una función que reciba tres números y determine si todos son positivos, al menos uno es negativo, o todos son negativos. Usa operadores lógicos (`&&`, `||`).
 function evaluarNumeros(a, b, c) {
+     
     if (a > 0 && b > 0 && c > 0) {
-      console.log("Todos los números son positivos.");
-    } else if (a < 0 || b < 0 || c < 0) {
-      console.log("Al menos un número es negativo.");
-    } else {
-      console.log("Todos los números son negativos o cero.");
-    }
+      console.log("Todos los números son positivos");
+
+    } else if (a < 0 && b < 0 && c < 0) {
+      console.log("Todos los números son negativos");
+
+    } else 
+      console.log("Al menos un número es negativo");
+    
   }
-  evaluarNumeros(2, 5, 3); //imprimimos en la consola 
+  evaluarNumeros(2, 1, -5);
 
 // Exportar todas las funciones
  export {
